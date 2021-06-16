@@ -1,4 +1,3 @@
-# Official PyTorch implementation of ResNets
 import torch
 from torch import Tensor
 import torch.nn as nn
