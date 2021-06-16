@@ -1,5 +1,5 @@
 # Team ConcordIA - 4th place
-Accuracy **>96%** on covidx-cxr2 test set. Score of **14.60/16**. 
+Accuracy **>96%** on covidx-cxr2 test set. Score of **14.60/16** on competition test. 
 
 ![rank](https://gillesschneider.github.io/me/assets/images/rank.png)
 
