@@ -12,6 +12,7 @@ import torch
 import pandas as pd
 from models.resnet import *
 from toolsp.equalization import equalization
+from torchvision.models import *
 
 SHAPE = (240, 240)
 
@@ -78,7 +79,7 @@ competition_loader = DataLoader(competition, batch_size=40, shuffle=False)
 
 # Model definition
 device = torch.device(device)
-model = resnext50_32x4d()
+model = resnext50_32x4d(num_classes=2)
 model.to(device)
 
 # Training stuff
