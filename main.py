@@ -10,7 +10,6 @@ from torch.optim import lr_scheduler
 import torch.nn as nn
 import torch
 import pandas as pd
-from models.resnet import *
 from toolsp.equalization import equalization
 from torchvision.models import *
 
