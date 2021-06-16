@@ -1,5 +1,6 @@
 # Team ConcordIA - 4th place
 Accuracy **>96%** on covidx-cxr2 dataset. Score of **14.60/16**. 
+
 ![rank](https://gillesschneider.github.io/me/assets/images/rank.png)
 
 # About our work
