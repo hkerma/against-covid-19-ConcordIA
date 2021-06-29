@@ -8,19 +8,28 @@ Go [here](https://gillesschneider.github.io/me/against-covid-19.html) for more d
 
 # Requirements
 
-python3.8
-[tqdm](https://pypi.org/project/tqdm/)
-[PIL](https://pypi.org/project/Pillow/)
-[matplotlib](https://pypi.org/project/matplotlib/)
-[sklearn](https://pypi.org/project/scikit-learn/)
-[numpy](https://pypi.org/project/numpy/)
-[torch](https://pypi.org/project/torch/)
-[torchvision](https://pypi.org/project/torchvision/)
+- python3.8
+- [tqdm](https://pypi.org/project/tqdm/)
+- [PIL](https://pypi.org/project/Pillow/)
+- [matplotlib](https://pypi.org/project/matplotlib/)
+- [sklearn](https://pypi.org/project/scikit-learn/)
+- [numpy](https://pypi.org/project/numpy/)
+- [torch](https://pypi.org/project/torch/)
+- [torchvision](https://pypi.org/project/torchvision/)
 
 # How to use
 
+## For judging:
+1. Get the competition dataset from [Kaggle](https://www.kaggle.com/andyczhao/covidx-cxr2)
+2. Install the requirements (see list above)
+3. Put the dataset in `<this_repo>/../dataset/competition_test` (see example tree below)
+4. Run `python3 review.py`. The script will create a `submission_review.txt` file at the root of the repo. That file corresponds to our final submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/925/leaderboard/2424)
+
+Feel free to reach us for any question/inquiries.
+
+Example tree:
 ```
-├── against-covid-19-public
+├── against-covid-19-ConcordIA
 │   ├── dataset
 │   │   ├── dataset.py
 │   │   ├── test.csv
@@ -62,5 +71,7 @@ python3.8
     └── train.txt
 ```
 
+## For training
+
 Download the dataset from [here](https://www.kaggle.com/andyczhao/covidx-cxr2) and extract the files to `<CWD>/../dataset`.
-Run `main.py` to train the model, saved models are in `/saved_models`
+Run `python3 main.py` to train the model, saved models are in `/saved_models`
