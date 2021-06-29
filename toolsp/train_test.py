@@ -1,4 +1,3 @@
-import copy
 import torch
 import tqdm
 import os

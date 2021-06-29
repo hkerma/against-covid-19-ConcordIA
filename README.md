@@ -6,7 +6,19 @@ Accuracy **>96%** on covidx-cxr2 test set. Score of **14.60/16** on competition 
 # About our work
 Go [here](https://gillesschneider.github.io/me/against-covid-19.html) for more details.
 
+# Requirements
+
+python3.8
+[tqdm](https://pypi.org/project/tqdm/)
+[PIL](https://pypi.org/project/Pillow/)
+[matplotlib](https://pypi.org/project/matplotlib/)
+[sklearn](https://pypi.org/project/scikit-learn/)
+[numpy](https://pypi.org/project/numpy/)
+[torch](https://pypi.org/project/torch/)
+[torchvision](https://pypi.org/project/torchvision/)
+
 # How to use
+
 ```
 ├── against-covid-19-public
 │   ├── dataset
