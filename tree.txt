@@ -1,5 +1,5 @@
 .
-├── against-covid-19-public
+├── against-covid-19-ConcordIA
 │   ├── dataset
 │   │   ├── dataset.py
 │   │   ├── test.csv
