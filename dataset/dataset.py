@@ -58,9 +58,12 @@ class CovidDataset(Dataset):
 
 class CompetitionDataset(Dataset):
 
-    def __init__(self, root_dir, transform, device):
+    def __init__(self, root_dir, transform, device, PATH_TO_IMAGES = None):
 
-        images = [root_dir + str(i) + '.png' for i in range(1, 401)]
+        if PATH_TO_IMAGES == None:
+            images = [root_dir + str(i) + '.png' for i in range(1, 401)]
+        else:
+        	images = PATH_TO_IMAGES
 
     
         self.transform = transform
