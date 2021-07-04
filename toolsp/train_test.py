@@ -167,8 +167,8 @@ def competition(model, competition_loader, device, optimizer):
             with torch.no_grad():
 
                 outputs = model(images)
-                _, preds = torch.max(outputs, 1)
+                #_, preds = torch.max(outputs, 1)
 
-            all_preds += preds.data.cpu().numpy().tolist()
+            all_preds += outputs
 
     return(all_preds)
