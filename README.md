@@ -22,8 +22,9 @@ Go [here](https://gillesschneider.github.io/me/against-covid-19.html) for more d
 ## For judging:
 1. Get the competition dataset from [Kaggle](https://www.kaggle.com/andyczhao/covidx-cxr2)
 2. Install the requirements (see list above)
-3. Put the dataset in `<this_repo>/../dataset/competition_test` (see example tree below)
-4. Run `python3 review.py`. The script will create a `submission_review.txt` file at the root of the repo. That file corresponds to our final submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/925/leaderboard/2424)
+4. Run `python3 eval.py --list path_1 path_2 ... --model4 path_to_model_4 --model5 path_to_model_5`. The output corresponds to our final submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/925/leaderboard/2424). By default, `path_to_model_4 = ./saved_models/sub_4.pt` and `path_to_model_5 = ./saved_models/sub_5.pt`.
+
+Example: `python3 eval.py --list 1.png 2.png ... --model4 ./saved_models/sub_4.pt --model5 ./saved_models/sub_5.pt`.
 
 Feel free to reach us for any question/inquiries.
 
