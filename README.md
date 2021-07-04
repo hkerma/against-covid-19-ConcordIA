@@ -22,8 +22,7 @@ Go [here](https://gillesschneider.github.io/me/against-covid-19.html) for more d
 ## For judging:
 1. Get the competition dataset from [Kaggle](https://www.kaggle.com/andyczhao/covidx-cxr2)
 2. Install the requirements (see list above)
-<<<<<<< HEAD
-4. Run `python3 eval.py --list path_1 path_2 ... --model path_to_model`. The output corresponds to our final submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/925/leaderboard/2424). By default, `path_to_model = ./saved_models/model.pt`.
+3. Run `python3 eval.py --list ["<path1>", "<path2>", ...] --model <path_to_model>`. The output corresponds to our final submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/925/leaderboard/2424). By default, `path_to_model = ./saved_models/model.pt`.
 
 Example: `python3 eval.py --list ["/absolute/path/to/1.png", "/absolute/path/to/2.png", ...] --model ./saved_models/model.pt`.
 
