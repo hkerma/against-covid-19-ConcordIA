@@ -6,7 +6,6 @@ from toolsp.train_test import *
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import argparse
-<<<<<<< HEAD
 from toolsp.model import Model
 
 parser = argparse.ArgumentParser(description='Evaluation')
