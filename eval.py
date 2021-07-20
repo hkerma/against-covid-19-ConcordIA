@@ -9,7 +9,7 @@ import argparse
 from toolsp.model import Model
 
 parser = argparse.ArgumentParser(description='Evaluation')
-parser.add_argument("--model", type=str)
+parser.add_argument("--model", type=str, default="saved_models/model.pt")
 
 args = parser.parse_args()
 
