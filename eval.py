@@ -9,7 +9,6 @@ import argparse
 from toolsp.model import Model
 
 parser = argparse.ArgumentParser(description='Evaluation')
-parser.add_argument("--list", type=str, nargs="*")
 parser.add_argument("--model", type=str)
 
 args = parser.parse_args()
@@ -17,7 +16,7 @@ args = parser.parse_args()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 SHAPE = (240, 240)
 
-PATH_TO_IMAGES = [r.strip("[],") for r in args.list]
+PATH_TO_IMAGES = ["/home/hossein.aboutalebi/data/challenge/competition_test/{}.png".format(id) for id in range(1, 401)]
 print(PATH_TO_IMAGES)
 PATH_TO_MODEL = args.model
 
